@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Onda Azul</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjVef-hTA_XQCISbkBGGsXzb0CKNtO3vE"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" onload="initMap()">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/onda-azul-azulbg.png" alt="" style="width: 90px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Quem Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Desafios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#counter">Parceiros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Seja um Organizador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rank">Ranking</a>
+                    </li>
+                </ul>
+                <a href="#portfolio" class="btn btn-brand ms-lg-3">Embarque nessa</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" class="min-vh-100 d-flex align-items-center text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 data-aos="fade-left" class="text-uppercase text-white fw-semibold display-1">Onda Azul</h1>
+                    <h5 class="text-white mt-3 mb-4" data-aos="fade-right">UM APELO PARA TRANSFORMAR AS PRAIS BRASILEIRAS E SALVAR NOSSOS OCEANOS</h5>
+                    <div data-aos="fade-up" data-aos-delay="50">
+                        <a href="#portfolio" class="btn btn-brand me-2">Participar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="50">
+                    <div class="section-title">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6" data-aos="fade-down" data-aos-delay="50">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/O79pK3oSTrs?si=MOglv8ni9VmAGxPT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
+                <div data-aos="fade-down" data-aos-delay="150" class="col-lg-5">
+                    <h1>Nós somos a mudança</h1>
+                    <p class="mt-3 mb-4">
+                        A Onda Azul é uma organização sem fins lucrativos dedicada a combater a poluição dos oceanos através de mobilizações comunitárias. 
+                        Organizamos multirões de limpeza em praias de todo o Brasil, reunindo pessoas de todas as idades e origens em prol de um <strong>futuro mais limpo e sustentável.</strong> 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section-padding border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">O que enfrentamos</h1>
+                        <div class="line"></div>
+                        <p>Muitos problemas decorrem da poluição dos oceanos, e alguns deles só estão no ínicio</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="150">
+                    <div class="service service1 theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class=""></i>
+                        </div>
+                        <h5 class="mt-4 mb-3">Vidas</h5>
+                        <p> Milhares de animais marinhos morrem todos os anos por ingestão de plástico</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="250">
+                    <div class="service  service2 theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class=""></i>
+                        </div>
+                        <h5 class="mt-4 mb-3">Clima</h5>
+                        <p>Acidificação da água e diminuição da capacidade dos oceanos regular o clima global.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="350">
+                    <div class="service service3 theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class=""></i>
+                        </div>
+                        <h5 class="mt-4 mb-3">Biodiversidade</h5>
+                        <p>Diminuição de espécies marinhas, afetando a biodiversidade e o equilíbrio dos ecossistemas.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="450">
+                    <div class="service service4 theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class=""></i>
+                        </div>
+                        <h5 class="mt-4 mb-3">Habitats</h5>
+                        <p>Perda de ecossistemas marinhos, como recifes de corais e manguezais.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="550">
+                    <div class="service service5 theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class=""></i>
+                        </div>
+                        <h5 class="mt-4 mb-3">Comunidades</h5>
+                        <p>Abalo de grupos costeiros que dependem do turismo e da pesca.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" data-aos="fade-down" data-aos-delay="650">
+                    <div class="service service6 theme-shadow p-lg-5 p-4">
+                        <div class="iconbox">
+                            <i class=""></i>
+                        </div>
+                        <h5 class="mt-4 mb-3">Sociedades</h5>
+                        <p> Microplásticos poluem os oceanos e acabam em nossos pratos, prejudicando nossa saúde.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COUNTER -->
+    <section id="counter" class="section-padding bg-light">
+        
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">Nossos parceiros</h1>
+                        <div class="line"></div>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="150">
+                    <img src="assets/images/softtek-logo.svg" alt="">
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="250">
+                    <img src="assets/images/unesco.svg" alt="">
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="350">
+                    <img src="assets/images/aws-partner-logo.svg" alt="">
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="450">
+                    <img src="assets/images/pacto-global.svg" alt="">
+                </div>
+
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="450">
+                    <img src="assets/images/rede-oceano-limpo-logo.svg" alt="">
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="450">
+                    <img src="assets/images/select.svg" alt="">
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="450">
+                    <img src="assets/images/o2o.svg" alt="">
+                </div>
+                <div class="col-lg-3 col-sm-6" data-aos="fade-down" data-aos-delay="450">
+                    <img src="assets/images/catedra.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">Como ajudar</h1>
+                        <div class="line"></div>
+                        <h5>Selecione o multirão mais próximo de você, se inscreva, e faça a diferença!</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150"></div>
+                <div class="col-12 d-flex justify-content-center">
+                    <div id="map" class="map-container"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-xl">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Multirão Praia Grande Azul</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row justify-content-between">
+                    <div class="col-lg-6" data-aos="fade-down" data-aos-delay="50">
+                        <div class="d-flex pt-4 mb-3">
+                            <div class="iconbox me-4">
+                                <i class="ri-time-line"></i>
+                            </div>
+                            <div>
+                                <h5>Dia 10/07 as 09:00</h5>
+                                <p>Encontro no Quiosque Picapau</p>
+                            </div>
+                        </div>
+                        <div class="d-flex pt-4 mb-3">
+                            <div class="iconbox me-4">
+                                <i class="ri-team-fill"></i>
+                            </div>
+                            <div>
+                                <h5>Participantes</h5>
+                                <div class="participant">
+                                    <img class="rounded-circle" src="./assets/images/avatar1.jpg" alt="" style="width: 50px; height:50px ;">
+                                    <span>Daniel Ribeiro</span>
+                                </div>
+                                <div class="participant">
+                                    <img class="rounded-circle" src="./assets/images/avatar1.jpg" alt="" style="width: 50px; height:50px ;">
+                                    <span>Daniel Ribeiro</span>
+                                </div>
+                                <div class="participant">
+                                    <img class="rounded-circle" src="./assets/images/avatar1.jpg" alt="" style="width: 50px; height:50px ;">
+                                    <span>Daniel Ribeiro</span>
+                                </div>
+                                <div class="participant">
+                                    <img class="rounded-circle" src="./assets/images/avatar1.jpg" alt="" style="width: 50px; height:50px ;">
+                                    <span>Daniel Ribeiro</span>
+                                </div>
+
+                                <div class="participant">
+                                    <span>
+                                        . . . 
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-down" data-aos-delay="150" class="col-lg-6">
+                        <div class="d-flex pt-4 mb-3">
+                            <div class="iconbox me-4">
+                                <i class="ri-mail-send-fill"></i>
+                            </div>
+                            <div>
+                                <h5>Inscreva-se</h5>
+                                <form>
+                                    <div class="mb-3">
+                                      <label for="exampleInputEmail1" class="form-label">Email</label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                      <div id="emailHelp" class="form-text">Nós nunca iremos compartilhar seu email.</div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Participar</button>
+                                  </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scrollable modal -->
+<div class="modal-dialog modal-dialog-scrollable">
+    ...
+  </div>
+
+    <!-- RANK -->
+    <section id="rank" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="50">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">Ranking mensal</h1>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" data-aos="fade-down" data-aos-delay="100">
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col" class="align-middle text-center">#</th>
+                                <th scope="col" class="align-middle text-center">Nome</th>
+                                <th scope="col" class="align-middle text-center">Participação em Multirões</th>
+                                <th scope="col" class="align-middle text-center">Quantidade de Lixo Coletado (KG)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Exemplo de linha de dados -->
+                            <tr>
+                                <th scope="row" class="align-middle text-center text-white">1</th>
+                                <td class="align-middle text-white">
+                                    <div class="participant">
+                                        <img src="./assets/images/coroa.png" class="coroa" alt="">
+                                        <img class="rounded-circle" src="./assets/images/avatar1.jpg" alt="" style="width: 50px; height:50px ;">
+                                        <span>João Silva</span>
+                                    </div>
+                                </td>
+                                <td class="align-middle text-center text-white">5</td>
+                                <td class="align-middle text-center text-white">120</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="align-middle text-center">2</th>
+                                <td class="align-middle ">
+                                    <div class="participant">
+                                        <img class="rounded-circle" src="./assets/images/avatar1.jpg" alt="" style="width: 50px; height:50px ;">
+                                        <span>Maria Beltrano</span>
+                                    </div>
+                                </td>
+                                <td class="align-middle text-center">4</td>
+                                <td class="align-middle text-center">100</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="align-middle text-center">3</th>
+                                <td class="align-middle ">
+                                    <div class="participant">
+                                        <img class="rounded-circle" src="./assets/images/avatar1.jpg" alt="" style="width: 50px; height:50px ;">
+                                        <span>Guilerme Ciclano</span>
+                                    </div>
+                                </td>
+                                <td class="align-middle text-center">3</td>
+                                <td class="align-middle text-center">80</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="align-middle text-center">3</th>
+                                <td class="align-middle ">
+                                    <div class="participant">
+                                        <img class="rounded-circle" src="./assets/images/avatar1.jpg" alt="" style="width: 50px; height:50px ;">
+                                        <span>Milena Silva</span>
+                                    </div>
+                                </td>
+                                <td class="align-middle text-center">3</td>
+                                <td class="align-middle text-center">80</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="align-middle text-center">3</th>
+                                <td class="align-middle ">
+                                    <div class="participant">
+                                        <img class="rounded-circle" src="./assets/images/avatar1.jpg" alt="" style="width: 50px; height:50px ;">
+                                        <span>Pedro José</span>
+                                    </div>
+                                </td>
+                                <td class="align-middle text-center">3</td>
+                                <td class="align-middle text-center">80</td>
+                            </tr>
+                            <!-- Adicione mais linhas conforme necessário -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section-padding bg-light" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                    <div class="section-title">
+                        <h1 class="display-4 text-white fw-semibold">Seja um organizador</h1>
+                        <div class="line bg-white"></div>
+                        <p class="text-white">Preencha o formulário abaixo para que possamos entrar em contato com você e lhe mostrar os próximos passos!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center" data-aos="fade-down" data-aos-delay="250">
+                <div class="col-lg-8">
+                    <form action="#" class="row g-3 p-lg-5 p-4 bg-white theme-shadow">
+                        <div class="form-group col-lg-6">
+                            <input type="text" class="form-control" placeholder="Nome">
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <input type="text" class="form-control" placeholder="Sobrenome">
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <input type="email" class="form-control" placeholder="Endereço de email">
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <input type="text" class="form-control" placeholder="Cidade em que deseja realizar o movimento">
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <label for="organizationType">Selecione o tipo de organização</label>
+                            <select id="organizationType" name="organizationType" class="form-control">
+                                <option value="orgao-publico">Orgão Público</option>
+                                <option value="ong">ONG</option>
+                                <option value="escola">Escola</option>
+                                <option value="universidade">Universidade</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-lg-12 d-grid">
+                            <button class="btn btn-brand">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">Nosso time</h1>
+                        <div class="line"></div>
+                        <p>Amantes em criação de experiencias digitais aliadas à natureza</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 text-center justify-content-evenly">
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="150">
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src="./assets/images/perfil-victor.jpg" alt="">
+                        </div>
+                        <div class="team-member-content">
+                            <h4 class="text-white">Victor Porfírio</h4>
+                            <p class="mb-0 text-white">Desenvolvedor de Software</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down" data-aos-delay="250">
+                    <div class="team-member image-zoom">
+                        <div class="image-zoom-wrapper">
+                            <img src="./assets/images/perfil-daniel.jpg" alt="">
+                        </div>
+                        <div class="team-member-content">
+                            <h4 class="text-white">Daniel Ribeiro</h4>
+                            <p class="mb-0 text-white">Desenvolvedor de Software</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="#"><img src="./assets/images/onda-azul-azulbg.png" alt="" style="width: 120px; margin-bottom: 20px;"></a>
+                        <p>Por um oceano mais limpo <br> e um futuro melhor!</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="ri-twitter-fill"></i></a>
+                            <a href="#"><i class="ri-instagram-fill"></i></a>
+                            <a href="#"><i class="ri-github-fill"></i></a>
+                            <a href="#"><i class="ri-dribbble-fill"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="mb-0 text-white">PARTICIPE</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li><a class="border-bottom" href="#portfolio">Faça parte você também!</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="mb-0 text-white">ORGANIZADOR</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li><a class="border-bottom" href="#contact">Seja um Organizador</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="mb-0 text-white">CONTATO</h5>
+                        <div class="line"></div>
+                        <ul>
+                            <li>Endereço</li>
+                            <li>Email</li>
+                            <li>www.example.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row g-4 justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0">© Copyright Onda Azul. All Rights Reserved</p>
+                    </div>
+                    <div class="col-auto" style="margin-top: 0px;">
+                        <p class="mb-0">Designed with 💜 By <img src="./assets/images/DV Tech - sem fundo.png" style="width: 70px; height: 70px;"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
